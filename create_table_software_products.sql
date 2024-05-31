@@ -1,0 +1,23 @@
+CREATE TABLE `dbt-learn-360010.user_feedback_survey.software_products` (
+    survey_id INT64,
+    user_id STRING,
+    product_1 BOOLEAN,
+    product_2 BOOLEAN,
+    product_3 BOOLEAN,
+    other_product STRING,
+    overall_satisfaction INT64,
+    valuable_features ARRAY<STRING>,
+    missing_features ARRAY<STRING>,
+    ui_rating INT64,
+    technical_issues STRING,
+    likelihood_recommendation STRING,
+    improvement_suggestions STRING,
+    support_channel STRING,
+    additional_comments STRING,
+    age_group STRING,
+    gender STRING,
+    occupation STRING,
+    feature_satisfaction ARRAY<STRUCT<feature_name STRING, satisfaction_rating INT64>>,
+    support_response_time INT64,
+    recommendation_likelihood INT64
+);
